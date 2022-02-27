@@ -115,10 +115,10 @@ git add  <file1> <file2> ... <filen>
 git add  --all
 ```
 
-> ### Variação do git add --all == **_git add ._**
+> ### Variação do git add --all
 
 ```git
-git add -A
+git add -A  ou  git add .
 ```
 
 ![addAll](./readme.md-assets/git_add_all.png)
