@@ -26,9 +26,34 @@ O mecanismo que o Git utiliza para esta soma de verificação é chamado um hash
 
 ![git work tree](./readme.md-assets/areas.png)
 
+- ### Working directory
+
+  > Diretório de trabalho atual
+
+- ### Staging area
+
+  > Cria uma "imagem" do arquivo a ser comitado. Nessa área o arquivo não pode ser modificado
+
+- ### Git directory
+  > árvore de diretórios do git. É criado um ponto no histórico do git.
+
+---
+
+## Work flow
+
+O fluxo de trabalho básico Git é algo assim:
+
+- Você modifica arquivos no seu diretório de trabalho.
+
+- Você prepara os arquivos, adicionando imagens deles à sua área de preparo.
+
+- Você faz commit, o que leva os arquivos como eles estão na área de preparo e armazena essa imagens de forma permanente para o diretório do Git.
+
 ---
 
 ## Git init
+
+> ### Inicializa um repositório GIT no projeto
 
 ```git
 git init
@@ -36,10 +61,62 @@ git init
 
 ---
 
-## Git config
+## Git version
+
+> ### Versão do git instalado no sistema
 
 ```git
-git config <argument>
+git --version
 ```
 
 ---
+
+## Git status
+
+> ### Verifica o status da árvore do git atual
+
+```git
+git status
+```
+
+---
+
+## Git config
+
+```git
+git config <argument> <value?>
+
+Exemplo de configuração:
+$ git config --global user.name "Um nome qualquer"
+$ git config --global user.email umapessoaaleatoria@email.com
+```
+
+---
+
+## Git add
+
+> ### Adiciona arquivos do diretório de trabalho atual a **_staging area_**
+
+```git
+git add  <file1> <file2> ... <filen>
+```
+
+---
+
+## Git commit
+
+> ### Adiciona o(s) arquivo da **_staging area_** para o **_git directory_**. Configurações são necessárias
+
+```git
+git commit -m <"value">
+
+Ex.:
+git commit -m "Um commit aleatório"
+
+```
+
+---
+
+## git log
+
+> ### Visualiza o histórico de commis. Existem variações deste comando.
