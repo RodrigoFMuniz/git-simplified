@@ -69,6 +69,8 @@ git init
 git --version
 ```
 
+![version](./readme.md-assets/git_version.png)
+
 ---
 
 ## Git status
@@ -78,6 +80,8 @@ git --version
 ```git
 git status
 ```
+
+![status](./readme.md-assets/git_status.png)
 
 ---
 
@@ -103,17 +107,21 @@ $ git config --global user.email umapessoaaleatoria@email.com
 git add  <file1> <file2> ... <filen>
 ```
 
+![addfile](./readme.md-assets/git_add_file.png)
+
 > ### Adiciona a **_staging area_** todo tipo de alteração(add/rm).
 
 ```git
 git add  --all
 ```
 
-> ### Variação do git add --all
+> ### Variação do git add --all == **_git add ._**
 
 ```git
 git add -A
 ```
+
+![addAll](./readme.md-assets/git_add_all.png)
 
 ---
 
