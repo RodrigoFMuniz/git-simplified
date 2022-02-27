@@ -83,6 +83,8 @@ git status
 
 ## Git config
 
+> ### Local de atualização das configurações do git localmente e globalmente na sua máquina
+
 ```git
 git config <argument> <value?>
 
@@ -101,6 +103,18 @@ $ git config --global user.email umapessoaaleatoria@email.com
 git add  <file1> <file2> ... <filen>
 ```
 
+> ### Adiciona a **_staging area_** todo tipo de alteração(add/rm).
+
+```git
+git add  --all
+```
+
+> ### Variação do git add --all
+
+```git
+git add -A
+```
+
 ---
 
 ## Git commit
@@ -115,8 +129,58 @@ git commit -m "Um commit aleatório"
 
 ```
 
+> ### Abrirá um editor de texto configurado para inserir a mensagem de commit.
+
+```git
+git commit -a
+```
+
+> ### Adicionar e commitar com uma linha
+
+```git
+git commit -a -m <"value">
+```
+
 ---
 
 ## git log
 
 > ### Visualiza o histórico de commis. Existem variações deste comando.
+
+```git
+git log
+```
+
+![log-basis](./readme.md-assets/log.png)
+
+```git
+git log  --oneline
+```
+
+![oneline](./readme.md-assets/log_oneline.png)
+
+```git
+git log --name-status
+```
+
+![name status](./readme.md-assets/log_name_status.png)
+
+```git
+git log --author="autor"
+```
+
+![autor](./readme.md-assets/log_author.png)
+
+```git
+git log --grep="palavra"
+```
+
+![grep](./readme.md-assets/log_grep.png)
+
+```git
+git log --pretty=oneline
+```
+
+```git
+git log
+```
