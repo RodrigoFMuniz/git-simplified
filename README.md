@@ -145,7 +145,7 @@ git commit -a -m <"value">
 
 ## git log
 
-> ### Visualiza o histórico de commis. Existem variações deste comando.
+> ### Visualiza o histórico de commits. Existem variações deste comando.
 
 ```git
 git log
@@ -153,11 +153,20 @@ git log
 
 ![log-basis](./readme.md-assets/log.png)
 
+> ### Apresenta os 7 primeiros dígitos do hashcode + a descrição.
+
 ```git
 git log  --oneline
 ```
 
 ![oneline](./readme.md-assets/log_oneline.png)
+
+> ### Apresenta o histórico de maneira mais resumida e organizada. As letras representam:
+>
+> - A: Added
+> - D: Deleted
+> - M: Modified
+> - U: Untracked
 
 ```git
 git log --name-status
@@ -165,11 +174,15 @@ git log --name-status
 
 ![name status](./readme.md-assets/log_name_status.png)
 
+> ### Lista filtrando pelo autor.
+
 ```git
-git log --author="autor"
+git log --author="nome do autor"
 ```
 
 ![autor](./readme.md-assets/log_author.png)
+
+> ### Lista filtrando pela palavra / argumento passado.
 
 ```git
 git log --grep="palavra"
@@ -177,11 +190,17 @@ git log --grep="palavra"
 
 ![grep](./readme.md-assets/log_grep.png)
 
+> ### Semelhante ao --oneline, porém com todo o hashcode.
+
 ```git
 git log --pretty=oneline
 ```
 
 ![pretty](./readme.md-assets/log_pretty_oneline.png)
+
+> ### Abrevia as mensagens dos logs.
+>
+> - Obs.: log --pretty=oneline --abbrev-commit == log --oneline
 
 ```git
 git log --abbrev-commit
@@ -189,17 +208,23 @@ git log --abbrev-commit
 
 ![abbrev](./readme.md-assets/log_abbrev.png)
 
+> ### Apresenta as estatísticas sobre os commits.
+
 ```git
 git log --stat
 ```
 
 ![stat](./readme.md-assets/log_stat.png)
 
+> ### Apresenta as alterações realizdas em cada commit.S
+
 ```git
 git log -p
 ```
 
 ![p](./readme.md-assets/log_p.png)
+
+> ### **_n_** == integer. Este valor representa a quantidade de commits a serem apresentandos.
 
 ```git
 git log -p -n
