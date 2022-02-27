@@ -181,6 +181,28 @@ git log --grep="palavra"
 git log --pretty=oneline
 ```
 
+![pretty](./readme.md-assets/log_pretty_oneline.png)
+
 ```git
-git log
+git log --abbrev-commit
 ```
+
+![abbrev](./readme.md-assets/log_abbrev.png)
+
+```git
+git log --stat
+```
+
+![stat](./readme.md-assets/log_stat.png)
+
+```git
+git log -p
+```
+
+![p](./readme.md-assets/log_p.png)
+
+```git
+git log -p -n
+```
+
+![n](./readme.md-assets/log_p_n.png)
