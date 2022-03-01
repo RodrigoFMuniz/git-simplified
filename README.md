@@ -98,6 +98,15 @@ $ git config --global user.email umapessoaaleatoria@email.com
 ```
 
 ---
+## Git help
+
+### API da documentação completa do git
+
+```git
+git help <option>
+```
+
+---
 
 ## Git add
 
